@@ -1,1 +1,1 @@
-export const MOVE_HERO = 'MOVE_HERO';
+export const SET_HERO_DIRECTION = 'SET_HERO_DIRECTION';

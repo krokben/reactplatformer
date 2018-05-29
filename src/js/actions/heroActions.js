@@ -1,7 +1,8 @@
-import { MOVE_HERO } from './types';
+import { SET_HERO_DIRECTION } from './types';
 
-export const moveHero = () => (dispatch) => {
+export const setHeroDirection = direction => (dispatch) => {
   dispatch({
-    type: MOVE_HERO,
+    type: SET_HERO_DIRECTION,
+    direction,
   });
 };

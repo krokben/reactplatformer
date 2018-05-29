@@ -1,16 +1,17 @@
-import { MOVE_HERO } from '../actions/types';
+import { SET_HERO_DIRECTION } from '../actions/types';
 
 const initialState = {
-  hero: {},
+  hero: {
+    direction: '',
+  },
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case MOVE_HERO:
-      return {
-        ...state,
-        hero: action.payload,
-      };
+    case SET_HERO_DIRECTION:
+      return Object.assign({}, state, {
+        direction: action.direction,
+      });
     default:
       return state;
   }
